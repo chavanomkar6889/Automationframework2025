@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite">
+
+  <test name="TestClassesInOrder">
+
+    <classes>
+      <!-- First run LoginTest -->
+      <class name="Base_Class.NewCustomerTest" />
+      
+      <!-- Then run NewCustomerTest -->
+      <class name="Base_Class.LoginTest" />
+    </classes>
+
+  </test>
+
+</suite>
